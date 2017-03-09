@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: app1
+  cloud:
+    config:
+      uri: http://localhost:8888
+
+server:
+  port: 8085
+  contextPath: /app1
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+     leaseRenewalIntervalInSeconds: 5
+     
